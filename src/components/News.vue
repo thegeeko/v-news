@@ -54,6 +54,9 @@
         </div>
       </div>
     </div>
+    <footer class="notification is-primary">
+      <p>Made By Geek &amp; shakir</p>
+    </footer>
   </div>
 </template>
 
@@ -127,7 +130,7 @@ export default {
     margin-left: 46px
   }
   .message {
-    width: 253px;
+    width: 500px;
     text-align: center;
     margin: auto;
     box-shadow: 3px 3px 20px -5px black
@@ -137,11 +140,20 @@ export default {
     margin: 10px 0;
     display:block;
   }
-
+  footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    text-align: center;
+    padding: 10px 0 0 0;
+  }
   @media only screen and (max-width: 767px) and (min-width: 575.98px)  {
     .card {
       width: 40%;
       margin:5%
+    }
+    .message {
+      width: 253px;
     }
   }
 
@@ -149,6 +161,9 @@ export default {
     .card {
       width: 80%;
       margin:10%
+    }
+    .message {
+      width: 253px;
     }
   }
 </style>
